@@ -117,5 +117,21 @@ window.addEventListener('DOMContentLoaded', function () {
 
     window.changePageSize = function (size) {
         $('#recent-purchases-listing').DataTable().page.len(size).draw();
+
     };
+
+
+    (function($) {
+        'use strict';
+        $(function() {
+            $('#recent-purchases-listing').DataTable({
+                "language": {
+                    search: ""
+                },
+                searching: false,
+                paging: false,
+                info: false
+            });
+        });
+    })(jQuery);
 });
