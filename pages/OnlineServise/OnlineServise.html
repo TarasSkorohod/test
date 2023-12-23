@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>Оцінка ресторану</title>
+    <title>DZWINER</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link rel="stylesheet" href="../../css/style2.css">
     <link rel="stylesheet" href="../../vendors/mdi/css/materialdesignicons.min.css">
@@ -96,7 +96,7 @@
         </div>
     </div>
     <div class="img">
-        <img src="../../images/image%2011.png">
+        <img class="img_bb" src="../../images/image%2011.png">
     </div>
 
     <div class="b_grid_im">
@@ -165,7 +165,7 @@
 
 <!--    card-->
     <h1 class="title">Оцініть, будь ласка, кейс, за тьрома параметрами:</h1>
-    <div class="container">
+    <div class="container_c">
         <div class="card_c">
             <p>Обслуговування:</p>
             <div class="rating">
@@ -280,11 +280,52 @@
 <div id="fullscreenImage">
     <img id="modalImage" src="" alt="Fullscreen Image">
 </div>
-<script src="../../js/audio.js"></script>
+
 <script src="https://unpkg.com/wavesurfer.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script>
+    $(function() {
+        let wavesurfer = WaveSurfer.create({
+            container: "#audiowave",
+            waveColor: "#525252",
+            progressColor: "#262828",
+            height: 150,
+            responsive: true,
+            hideScrollbar: true,
+            cursorColor: "#5d5b5b",
+            cursorWidth: 2,
+            barWidth: 5,
+            barGap: 1.5,
+            skipLength: 5
+        });
+
+        wavesurfer.load("https://www.mfiles.co.uk/mp3-downloads/brahms-st-anthony-chorale-theme-two-pianos.mp3");
+
+        $(".btn-toggle-pause").on("click", function() {
+            wavesurfer.playPause();
+        });
+
+        $(".btn-backward").on("click", function() {
+            wavesurfer.skipBackward();
+        });
+
+        $(".btn-forward").on("click", function() {
+            wavesurfer.skipForward();
+        });
+
+        $(".btn-toggle-mute").on("click", function() {
+            wavesurfer.toggleMute();
+        });
+
+        $(".btn-stop").on("click", function() {
+            wavesurfer.stop();
+        });
+    });
+</script>
 <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
 <script src="../../js/modal.js"></script>
 <script src="../../js/searchInput.js"></script>
+
 <script src="../../vendors/base/vendor.bundle.base.js"></script>
 <script src="../../vendors/datatables.net-bs4/dataTables.bootstrap4.js"></script>
 <script src="../../js/off-canvas.js"></script>

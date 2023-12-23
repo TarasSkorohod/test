@@ -101,7 +101,7 @@
 <!--</div>-->
 
 <!--<script src="../../js/searchInput.js"></script>-->
-<!--<script src="../../js/dataTable.js"></script>-->
+<!--<script src="../../js/dataTableSegments.js"></script>-->
 
 <!--<script src="../../vendors/base/vendor.bundle.base.js"></script>-->
 <!--<script src="../../vendors/datatables.net-bs4/dataTables.bootstrap4.js"></script>-->
@@ -139,7 +139,9 @@
                     <i class="mdi mdi-home text-muted hover-cursor"></i>
                     <a class="link-item"  href="../../index.html"><p class="text-muted mb-0 hover-cursor">&nbsp;/&nbsp;Головна&nbsp;/&nbsp;</p>
                     </a>
-                    <p class="text-primary mb-0 hover-cursor">Сегменти</p>
+                    <a class="link-item"  href="../../index.html"><p class="text-muted mb-0 hover-cursor">Сегменти&nbsp;/&nbsp;</p>
+                    </a>
+                    <p class="text-primary mb-0 hover-cursor">Фінанси</p>
                 </div>
             </div>
             <ul class="navbar-nav navbar-nav-right">
@@ -198,48 +200,24 @@
                                     <thead>
                                     <tr>
                                         <th>Назва</th>
-                                        <th>Оцінка</th>
-                                        <th>Статус</th>
+                                        <th>Кількість сегментів</th>
+                                        <th>Кількість кейсів</th>
                                     </tr>
                                     </thead>
-                                    <tbody>
-                                    <tr>
-                                        <td><a class="link-item" href="../OnlineServise/OnlineServise.html">А-банк3</a></td>
-                                        <td><a class="link-item" href="../OnlineServise/OnlineServise.html">1</a></td>
-                                        <td><a class="link-item" href="../OnlineServise/OnlineServise.html"> <button type="button" class="btn btn-inverse-success">Оцінити</button></a> </td>
-
-                                        </tr>
-                                        <tr>
-                                            <td><a class="link-item" href="../OnlineServise/OnlineServise.html">А-банк</a></td>
-                                            <td><a class="link-item" href="../OnlineServise/OnlineServise.html">5</a></td>
-                                            <td><a class="link-item" href="../OnlineServise/OnlineServise.html">Редагувати</a></td>
-
-                                        </tr>
-                                        <tr>
-                                            <td><a class="link-item" href="../OnlineServise/OnlineServise.html">А-банк</a></td>
-                                            <td><a class="link-item" href="../OnlineServise/OnlineServise.html">4.3</a></td>
-                                            <td><a class="link-item" href="../OnlineServise/OnlineServise.html">Редагувати</a></td>
-
-                                        </tr>
-                                        <tr>
-                                            <td><a class="link-item" href="../OnlineServise/OnlineServise.html">А-банк</a></td>
-                                            <td><a class="link-item" href="../OnlineServise/OnlineServise.html">4.5</a></td>
-                                            <td><a class="link-item" href="../OnlineServise/OnlineServise.html">Редагувати</a></td>
-                                        </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
+                                    <tbody id="tableBody">
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
+        </div>
     </div>
 </div>
 
 <script src="../../js/searchInput.js"></script>
-<script src="../../js/dataTable.js"></script>
+<script src="../../js/dataTableFinances.js"></script>
 
 <script src="../../vendors/base/vendor.bundle.base.js"></script>
 <script src="../../vendors/datatables.net-bs4/dataTables.bootstrap4.js"></script>
@@ -249,4 +227,6 @@
 </body>
 
 </html>
+
+
 

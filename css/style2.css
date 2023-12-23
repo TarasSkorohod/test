@@ -4,6 +4,7 @@ body {
 
 }
 
+
 .bb_color {
     width: 1200px;
     margin: 0 auto;
@@ -36,7 +37,7 @@ body {
     border-bottom: 1px solid #F0F0F0;
 }
 
-.container {
+.container_c {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -189,7 +190,6 @@ button i {
 
 
 .card_c {
-
     border-left: 1px solid rgb(240, 240, 240);
     padding: 19px;
     text-align: left;
@@ -224,6 +224,8 @@ button i {
 .count {
     font-size: 50px;
 }
+
+
 
 .btn_green {
     width: 285px;
@@ -316,4 +318,105 @@ button i {
     float: right;
     color: #8E8E8E;
     padding: 10px 20px;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .audio {
+
+        width: 500px;
+        height: 147px;
+        background: #EEEEEE;
+        border-radius: 10px;
+        margin: auto;
+
+    }
+    .bb_color {
+        width: 800px;
+        margin: 0 auto;
+        background: white;
+
+    }
+    .img {
+
+    }
+    .img_bb{
+        width: 700px;
+
+    }
+
+    .container_c {
+        flex-direction: column;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .btn__bloc{
+        margin: 0 auto;
+    }
+    .btn_green:hover {
+        width: 185px;
+        height: 56px;
+        font-weight: bold;
+        border-radius: 18px;
+        border: none;
+        color: white;
+        font-size: 15px;
+        background: #2a2a2a;
+        cursor: pointer;
+
+    }
+
+    .btn__grey {
+        width: 123px;
+        height: 56px;
+        background: white;
+        border: 1px solid #D9D9D9;
+        border-radius: 18px;
+        color: black;
+        cursor: pointer;
+
+    }
+    .btn__grey:hover {
+        width: 123px;
+        height: 56px;
+        border: 1px solid #D9D9D9;
+        border-radius: 18px;
+        color: white;
+        background: #028891;
+        cursor: pointer;
+
+    }
+
+    .btn_green {
+        width: 185px;
+        height: 56px;
+        border-radius: 18px;
+        border: none;
+        color: white;
+        background: #028891;
+        cursor: pointer;
+
+    }
+
+    .btn_green:hover {
+        width: 185px;
+        height: 56px;
+        font-weight: bold;
+        border-radius: 18px;
+        border: none;
+        color: white;
+        background: #2a2a2a;
+        cursor: pointer;
+
+    }
+    .container_c {
+        margin: 0 auto;
+        padding: 0;
+        justify-content: center;
+    }
+
+    .img {
+        padding-top: 40px;
+    }
 }
